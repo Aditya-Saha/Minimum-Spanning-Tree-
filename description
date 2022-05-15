@@ -5,6 +5,10 @@ Kruskal’s algorithm qualifies  as a greedy algorithm because at each steps it 
 data structure to maintain several disjoint set of elements.Each set contains the vertices in one tree of  the current forest.
 The Find_Set(u)returns a representative element from the set that contains u.Thus we can determine whether two vertices u and v belong to the same tree by testing
 whether Find_Set(u) equals Find_Set(v).THis actually ensures that there is no cycle formation in the MST.To combine trees,Kruskal's Algorithm calls the UNION procedure.
+the graph used for kruskal code is shown in the main function
+ 
+ 
+
 
 Like Kruskal’s algorithm, Prim’s algorithm is also a Greedy algorithm.
 It starts with an empty spanning tree. The idea is to maintain two sets of vertices. 
