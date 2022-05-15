@@ -1,5 +1,11 @@
 A minimum spanning tree is a spanning tree in which the sum of the weight of the edges is as minimum as possible.
 
+Krushkal's algorithm finds a safe edge to adfd to the grrowing forest by finding, of all the edges that connects any two tree in the forest ,an edge of least weight.
+Kruskal’s algorithm qualifies  as a greedy algorithm because at each steps it adds to the forest an edge of least possible weight.This algorithm uses a disjoint set
+data structure to maintain several disjoint set of elements.Each set contains the vertices in one tree of  the current forest.
+The Find_Set(u)returns a representative element from the set that contains u.Thus we can determine whether two vertices u and v belong to the same tree by testing
+whether Find_Set(u) equals Find_Set(v).THis actually ensures that there is no cycle formation in the MST.To combine trees,Kruskal's Algorithm calls the UNION procedure.
+
 Like Kruskal’s algorithm, Prim’s algorithm is also a Greedy algorithm.
 It starts with an empty spanning tree. The idea is to maintain two sets of vertices. 
 The first set contains the vertices already included in the MST, the other set contains the vertices not yet included.
